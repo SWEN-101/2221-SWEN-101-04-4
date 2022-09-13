@@ -9,7 +9,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - MEMBER01
 - MEMBER02
 - MEMBER03
-- MEMBER04
+- David Holt
 
 
 ## Prerequisites  <_add anything else that applies_>
