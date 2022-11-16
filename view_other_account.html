@@ -48,14 +48,17 @@
       <div class="nav-box"><a href="index.html">Home</a></div>
     </div>
   </body>
-  <div class="popup" onclick="myFunction()">Click me!
-    <span class="popuptext" id="myPopup">Popup text...</span>
+  <div class="popup" onclick="myFunction()">Deactivate Account
+    <span class="popuptext" id="myPopup"></span>
   </div>
 </html>
 <script>
   function myFunction() {
-  if (confirm("Are you sure you want to close your account?") == True) {
-    location.href = 'https://swen-101.github.io/2221-SWEN-101-04-4/signup';
-  }
+    var ask = window.confirm("Are you sure you want to deactivate your account?");
+    if (ask) {
+        window.alert("Account successfully deleted.");
+
+        window.location.href = "https://swen-101.github.io/2221-SWEN-101-04-4/signup";
+    }
 }
 </script>
