@@ -48,4 +48,14 @@
       <div class="nav-box"><a href="index.html">Home</a></div>
     </div>
   </body>
+  <div class="popup" onclick="myFunction()">Click me!
+    <span class="popuptext" id="myPopup">Popup text...</span>
+  </div>
 </html>
+<script>
+  function myFunction() {
+  if (confirm("Are you sure you want to close your account?") == True) {
+    location.href = 'https://swen-101.github.io/2221-SWEN-101-04-4/signup';
+  }
+}
+</script>
