@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title of the document</title>
+    <title>Log In Page</title>
     <style>
+      h1 {
+        font-size: 22px;
+        text-align: center;
+      }
       .button {
-        background-color: white;
-        border-style: groove;
+        background-color: #EFEFEF;
+        border-style: outset;
+        border-color: gray;
         color: black;
-        padding: 20px 34px;
+        padding: 10px 50px;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 4px 2px;
+        display: block;
+		margin-right: 40%;	
+		margin-left: 40%;
+        font-size: 22px;
         cursor: pointer;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      label {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25%;
+		height: 20px;
+		font-size: 20px;
+      }
+      input {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25%;
       }
     </style>
   </head>
   <body>
-<label for="username">Username:</label>
-<input type="text"><br><br>
-<label for="password">Password:</label>
-<input type="text"><br><br>
-</form>
-    <a href="index.html" class="button">Log In</a>
-  <br><br>
-  <a>Don't have an Account?</a>
-  <br><br>
-  <a href="signup.html" class="button">Sign Up</a>
+	<br> <img src="logo.png">
+	<br> <label for="username">Username:</label>
+	<input type="text"><br>
+	<label for="password" >Password:</label>
+	<input type="password"><br>
+    <a href="index.html" class="button">Log In</a><br>
+  	<h1>Don't have an Account?</h1>
+  	<a href="signup.html" class="button">Sign Up</a>
   </body>
 </html>
