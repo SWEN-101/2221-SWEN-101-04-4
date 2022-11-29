@@ -37,6 +37,79 @@
         float: right;
         padding: 0.5% 1%;
       }
+	  .search-bar{
+	  	margin-top: 10px;
+		margin-left: 10px;
+		border: 1px solid black;
+		width: 580px;
+		height: 100px;
+		font-size: 40px;
+		text-align: center;
+	  }
+	  .frnd-box {
+	  	border: 1px solid black;
+		width: 580px;
+		height: 550px;
+		margin-top: 15px;
+		margin-left: 10px;
+	  }
+	  .frnd-box ul {
+	  	list-style-type: none;
+	  }
+	  .frnd-box ul li {
+	  	font-size: 40px;
+		margin-left: 15px;
+	  }
+	  .signout {
+	  	border: 1px solid black;
+		width: 580px;
+		height: 150px;
+		margin-top: 15px;
+		margin-left: 10px;
+		text-align: center;
+	  }
+	  .mainbox {
+	  	border: 1px solid black;
+		width: 1295px;
+		height: 665px;
+		margin-top: -835px;
+		margin-left: 600px;
+	  }
+      img {
+        display: block;
+		border: 2px solid black;
+        margin-left: 685px;
+        width: 45%;
+		height:75%;
+      }
+	  .topinfo {
+	  	margin-top: -550px;
+		font-size: 30px;
+	  }
+	  .topinfo ul {
+	  	list-style-type: none;
+	  }
+	  .topinfo ul li {
+	  	font-size: 20px;
+		margin-left: 15px;
+	  }
+	  .editinfo {
+	  	border: 1px solid black;
+		margin-left: 1094px;
+		margin-top: -82px;
+		width: 200px;
+		height: 60px;
+		text-align: center;
+		font-size: 40px;
+	  }
+	  .description {
+	  	border: 1px solid black;
+		width: 1295px;
+		height: 150px;
+		margin-top: 15px;
+		margin-left: 600px;
+		font-size: 40px;
+	  }
     </style>
   </head>
   <body>
@@ -47,9 +120,41 @@
       <div class="nav-box"><a href="map_and_search.html">Map+Search</a></div>
       <div class="nav-box"><a href="home.html">Home</a></div>
     </div>
-    <p>
-        Welcome Back _AccountName_ 
-    </p>
-    <a href="https://swen-101.github.io/2221-SWEN-101-04-4/messages">messages</a>
+	<div class="search-bar">
+	  <div style="margin-top: 20px;">Search Friends: <input type="text" style="height: 32px; font-size: 20px;"><br></div>
+	</div>
+	<div class="frnd-box">
+	  <h5 style="text-align:center; margin-top:15px; font-size:35px;">Friends</h5>
+	  <ul>
+	    <li><a href="messages.html" style="text-decoration: none">★</a><a style="font-size: 38px; margin-left: 30px; text-decoration: none" href="view_other_account.html">Jeremy Plank</a></li><br><br>
+		<li><a href="messages.html" style="text-decoration: none">★</a><a style="font-size: 38px; margin-left: 30px; text-decoration: none" href="view_other_account.html">Liam Longy</a></li><br><br>
+		<li><a href="messages.html" style="text-decoration: none">★</a><a style="font-size: 38px; margin-left: 30px; text-decoration: none" href="view_other_account.html">Lisa Smith</a></li><br><br>
+		<li><a href="messages.html" style="text-decoration: none">★</a><a style="font-size: 38px; margin-left: 30px; text-decoration: none" href="view_other_account.html">Henry Wordock</a></li><br><br>
+		<li><a href="messages.html" style="text-decoration: none">★</a><a style="font-size: 38px; margin-left: 30px; text-decoration: none" href="view_other_account.html">Adam Towns</a></li>
+	  </ul>
+	</div>
+	<div class="signout">
+		<div style="margin-top: 18px;"><a href="index.html" style="font-size:80px; text-color: #d90202;">Sign Out</a></div>
+	</div>
+	<div class="mainbox">
+	  <br> <img src="profile.jpg">
+	  <div class="topinfo">
+	  <h1 style="margin-left: 20px;">John Deere</h1>
+	  <ul>
+	    <li><a style="text-decoration: none">Birthday: 01/01/1980</a></li><br>
+		<li><a style="text-decoration: none">Gender: Male</a></li><br>
+		<li><a style="text-decoration: none">Lives In: Columbus, Ohio (43004)</a></li><br>
+		<li><a style="text-decoration: none">Occupastion: Tractor Driver</a></li><br>
+		<li><a style="text-decoration: none">Family Status: Partner with Kids</a></li><br>
+		<li><a style="text-decoration: none">Hobbies: Fishing, Karaoke</a></li><br>
+		<li><a style="text-decoration: none">Food Preferences: Beef Jerky, Any fish I catch</a></li><br>
+		<li><a style="text-decoration: none">Handicaps: Partial blindness</a></li><br>
+		<li><a style="text-decoration: none">Religion: Christian</a></li><br>
+		<li><a style="text-decoration: none">Can be reached at johnlovesfishing1234@email.com</a></li>
+	  </ul>
+	  </div>
+	  <div class="editinfo"><a href="account_information.html">Edit Info...</a></div>
+	</div>
+	<div class="description">Hey, I'm John. I'm a tractor driver 9 to 5, father and husband 24/7. Love to fish, have a soft spot for karaoke, and goodness gracious do I love beef jerky.</div>
   </body>
 </html>
