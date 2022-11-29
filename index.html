@@ -1,126 +1,105 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Sign Up Page</title>
     <style>
-      body{
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .nav-bar {
-        margin: 0 auto;
-        background-color: #eee;
-        border-style: groove;
-        max-width: 1500px;
-        overflow: hidden;
-      }
-
-      .nav-bar a{
-        display: inline-block;
-        position: relative;
-        text-align: center;
-        font-size: 2rem;
-        padding: 1% 1%;
+      .button {
+        background-color: #EFEFEF;
+        border-style: outset;
+        border-color: gray;
         color: black;
-      }
-
-      .nav-bar a:link{
-        text-decoration: none;                
-      }
-
-      .nav-bar a:hover{
-        text-decoration: underline;
-      }
-
-      .nav-bar div.nav-box{
-        border: groove;
-        background-color: white;
-        position: relative;
-        float: right;
-        padding: 0.5% 1%;
-      }
-
-      .friend-container{
-        border: 1px solid black;
-        margin-top: 15px;
-        margin-left: 10px;
-        width: 15%;
-        float: left;
-      }
-
-      .friend-container ul{
-        list-style-type: none;
-        padding-left: 30px;
-        padding-bottom: 37px;
-      }
-
-      .friend-container ul li{
-        font-style: italic;
-        font-size: 1.5rem;
-        padding-left: 12px;
-        padding-top: 12px;
-        padding-bottom: 5px;
-      }
-
-      .map {
-        border: 1px solid black;
-        margin-top: 15px;
-        margin-left: 10px;
-        float: left;
-      }
-
-      .my-account-container {
-        border: 1px solid black;
-        margin-top: 15px;
-        margin-left: 10px;
-        float: left;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 10px 50px;
         text-align: center;
+        text-decoration: none;
+        display: block;
+		margin-right: 40%;	
+		margin-left: 40%;
+        font-size: 22px;
+        cursor: pointer;
       }
+	  \img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+	  label {
+	  	font-size: 16px;
 
-      .my-account-container a{
-        color: black;
-      }
-
-      .my-account-container a:link{
-        text-decoration: underline;
-      }
-
-      .my-account-container a:hover{
-        color: #00A;
-      }
+	  }
+	  input {
+	  	font-size: 15px;
+	  }
+	  select {
+	  	font-size: 15px;
+	  }
     </style>
   </head>
   <body>
-    <div class="nav-bar">
-      <a>|Home|</a>
-      <div class="nav-box"><a href="notifications.html">Notifications</a></div>
-      <div class="nav-box"><a style="font-size: 1rem;" href="your_account.html">My account</a></div>
-      <div class="nav-box"><a href="map_and_search.html">Map+Search</a></div>
-      <div class="nav-box"><a href="index.html">Home</a></div>
-    </div>
-
-    <div class="friend-container">
-      <h2 style="text-align: center; font-size: 2rem">Friends:</h2>
-      <ul>
-        <li>Jeremy <a href="view_other_account.html">★</a></li>
-        <li>Lisa <a href="view_other_account.html">★</a></li>
-        <li>Henry <a href="view_other_account.html">★</a></li>
-      </ul>
-    </div>
-
-    <div class="map">
-      <a href="map_and_search.html">
-        <img src="43e6cd9f-e094-4e60-9eb7-575eff598b4b.png" height="275px" width="388px" style="float: left;">
-      </a>
-    </div>
-
-    <div class="my-account-container">
-      <a href="your_account.html">
-        <h3>John Deere</h3>
-        <img src="profile.jpg" height="250px" width="250px">
-      </a>
-      <p>Your Profile</p>
-    </div>
+  <br><img src="logo.png">
+  <div style="margin: 0px 0px 0px 700px">
+  	<label>First Name:</label>
+	<input type="text">
+	<label style="margin: 0px 0px 0px 10px">Last Name:</label>
+	<input type="text">
+	<br><br>
+  </div><div style="margin: 0px 0px 0px 700px">
+	<label>Birthday:</label>
+	<input type="date">	
+	<label style="margin: 0px 0px 0px 95px">Gender:</label>
+	<select name="Gender">
+	  <option value="none" selected disabled hidden>Select an Option</option>
+	  <option value="male">Male</option>
+	  <option value="female">Female</option>
+	  <option value="other">Other</option>
+	  <option value="rather not say">Rather Not Say</option>
+	</select>
+	<br><br>
+  </div><div style="margin: 0px 0px 0px 700px">
+	<label>City & State:</label>
+	<input type="text">	
+	<label>Zip Code:</label>
+	<input type="number">
+	<br><br>
+  </div><div style="margin: 0px 0px 0px 700px">	
+	<label>Occupation:</label>
+	<input type="text">
+	<label style="margin: 0px 0px 0px 7px">Family Status:</label>
+	<select name="Family Satus">
+      <option value="none" selected disabled hidden>Select an Option</option>	
+	  <option value="single">Single</option>
+	  <option value="partner">With Partner</option>
+	  <option value="married">Married</option>
+	  <option value="partnerkids">Partner with Kids</option>
+	  <option value="singlekids">Single with Kids</option>	  
+	</select>
+	<br><br>
+  </div><div style="margin: 0px 0px 0px 700px">
+	<label>Hobbies:</label>
+	<input type="text">
+	<label style="margin: 0px 0px 0px 28px">Food Preferences:</label>
+	<input type="text">
+	<br><br>
+  </div><div style="margin: 0px 0px 0px 700px">
+	<label>Handicaps:</label>
+	<input type="text">
+	<label style="margin: 0px 0px 0px 13px">Religion:</label>
+	<input type="text">
+	<br><br>
+  </div><div style="margin: 0px 0px 0px 700px">
+	<label>Email:</label>
+	<input type="email">
+	<label style="margin: 0px 0px 0px 41px">Confirm Email:</label>
+	<input type="email">
+	<br><br>
+  </div><div style="margin: 0px 0px 0px 700px">
+	<label>Passowrd:</label>
+	<input type="password">
+	<label style="margin: 0px 0px 0px 18px">Confirm Password:</label>
+	<input type="password">
+	<br><br>
+  </div>
+	<br>
+	<a href="index.html" class="button">Sign Up</a>
   </body>
 </html>
