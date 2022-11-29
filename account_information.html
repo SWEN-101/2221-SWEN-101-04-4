@@ -47,3 +47,17 @@
     </div>
   </body>
 </html>
+<div class="popup" onclick="myFunction()">Deactivate Account
+  <span class="popuptext" id="myPopup"></span>
+</div>
+</html>
+<script>
+function myFunction() {
+  var ask = window.confirm("Are you sure you want to deactivate your account?");
+  if (ask) {
+      window.alert("Account successfully deleted.");
+
+      window.location.href = "https://swen-101.github.io/2221-SWEN-101-04-4/signup";
+  }
+}
+</script>
