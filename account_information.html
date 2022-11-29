@@ -37,19 +37,94 @@
         float: right;
         padding: 0.5% 1%;
       }
+	  
+	  .deactivate {
+	  	border: 1px solid black;
+		width: 580px;
+		height: 150px;
+		margin-top: -150px;
+		margin-left: 10px;
+		text-align: center;
+	  }
+	  .mainbox {
+	  	border: 1px solid black;
+		width: 1885px;
+		height: 665px;
+		margin-top: 15px;
+		margin-left: 10px;
+	  }
+      img {
+        display: block;
+		border: 2px solid black;
+        margin-left: 1015px;
+        width: 45%;
+		height:75%;
+      }
+	  .topinfo {
+	  	margin-top: -550px;
+		font-size: 30px;
+	  }
+	  .topinfo ul {
+	  	list-style-type: none;
+	  }
+	  .topinfo ul li {
+	  	font-size: 18px;
+		margin-left: 15px;
+	  }
+	  .save {
+	  	border: 1px solid black;
+		margin-left: 1664px;
+		margin-top: -82px;
+		width: 200px;
+		height: 60px;
+		text-align: center;
+		font-size: 25px;
+	  }
+	  .description {
+	  	border: 1px solid black;
+		width: 1295px;
+		height: 150px;
+		margin-top: 15px;
+		margin-left: 600px;
+		font-size: 40px;
+	  }
     </style>
   </head>
   <body>
     <div class="nav-bar">
       <a>|My Account|</a>
-      <div class="nav-box"><a href="">Login</a></div>
-      <div class="nav-box"><a style="font-size: 1rem;" href="">Sign Up</a></div>
+      <div class="nav-box"><a href="notifications.html">Notifications</a></div>
+      <div class="nav-box"><a style="font-size: 1rem;" href="your_account.html">My account</a></div>
+      <div class="nav-box"><a href="map_and_search.html">Map+Search</a></div>
+      <div class="nav-box"><a href="home.html">Home</a></div>
     </div>
+	<div class="mainbox">
+	  <br> <img src="profile.jpg">
+	  <div class="topinfo">
+	  <h1 style="margin-left: 20px;">John Deere</h1>
+	  <ul>
+	    <li><a style="text-decoration: none">Birthday: </a><input type="text"></li><br>
+		<li><a style="text-decoration: none">Gender: </a><input type="text"></li><br>
+		<li><a style="text-decoration: none">Lives In: </a><input type="text"></li><br>
+		<li><a style="text-decoration: none">Occupastion: </a><input type="text"></li><br>
+		<li><a style="text-decoration: none">Family Status: </a><input type="text"></li><br>
+		<li><a style="text-decoration: none">Hobbies: </a><input type="text"></li><br>
+		<li><a style="text-decoration: none">Food Preferences: </a><input type="text"></li><br>
+		<li><a style="text-decoration: none">Handicaps: </a><input type="text"></li><br>
+		<li><a style="text-decoration: none">Religion: </a><input type="text"></li><br>
+		<li><a style="text-decoration: none">Can be reached at: </a><input type="text"></li>
+	  </ul>
+	  </div>
+	  <div class="save"><a href="youjr_account.html">Save Changes</a></div>
+	</div>
+	<div class="description"><input type="text" style="font-size: 85px; margin-top: 5px; margin-left:5px;"></div>
+	<div class="deactivate">
+		<div style="margin-top: 0px; font-size: 70px;">
+		<div class="popup" onclick="myFunction()">Deactivate Account
+  			<span class="popuptext" id="myPopup"></span>
+		</div></div>
+	</div>
   </body>
-</html>
-<div class="popup" onclick="myFunction()">Deactivate Account
-  <span class="popuptext" id="myPopup"></span>
-</div>
 </html>
 <script>
 function myFunction() {
